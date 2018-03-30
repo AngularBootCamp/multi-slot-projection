@@ -20,6 +20,7 @@ import { Component, Directive } from '@angular/core';
 export class BlueWrapperComponent { }
 
 @Directive({
+  // tslint:disable-next-line
   selector: 'heading, content'
 })
 export class BlueWrapperDirective { }
