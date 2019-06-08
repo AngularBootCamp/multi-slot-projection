@@ -17,10 +17,10 @@ import { Component, Directive } from '@angular/core';
     </div>
   `
 })
-export class BlueWrapperComponent { }
+export class BlueWrapperComponent {}
 
 @Directive({
   // tslint:disable-next-line:directive-selector
   selector: 'heading, content'
 })
-export class BlueWrapperDirective { }
+export class BlueWrapperDirective {}
