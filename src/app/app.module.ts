@@ -11,9 +11,9 @@ import { GreenWrapperComponent } from './green-wrapper.component';
 @NgModule({
   declarations: [
     AppComponent,
-    GreenWrapperComponent,
     BlueWrapperComponent,
-    BlueWrapperDirective
+    BlueWrapperDirective,
+    GreenWrapperComponent
   ],
   imports: [BrowserModule],
   bootstrap: [AppComponent]
