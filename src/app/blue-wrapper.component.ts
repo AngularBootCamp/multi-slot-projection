@@ -1,26 +1,28 @@
-import { Component, Directive } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'blue-wrapper',
+  selector: 'app-blue-wrapper',
   styles: [
-    '.outer { border: solid blue }',
-    '.inner { border: dotted blue }'
+    '.outer { border: 3px solid blue; }',
+    '.inner { border: 3px dotted blue; }'
   ],
   template: `
-    <div class="card outer">
+    <article class="outer">
       <h2>
-        <ng-content select="heading"></ng-content>
+        <ng-content select="app-blue-wrapper-heading"></ng-content>
       </h2>
-      <div class="card inner">
-        <ng-content select="content"></ng-content>
-      </div>
-    </div>
+      <article class="inner">
+        <ng-content select="app-blue-wrapper-content"></ng-content>
+      </article>
+    </article>
   `
 })
 export class BlueWrapperComponent {}
 
-@Directive({
-  // tslint:disable-next-line:directive-selector
-  selector: 'heading, content'
+@Component({
+  selector: 'app-blue-wrapper-heading, app-blue-wrapper-content',
+  template: `
+    <ng-content></ng-content>
+  `
 })
-export class BlueWrapperDirective {}
+export class BlueWrapperChildrenComponent {}

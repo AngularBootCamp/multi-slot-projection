@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'green-wrapper',
-  styles: ['.card { border: solid green }'],
+  selector: 'app-green-wrapper',
+  styles: ['article { border: 3px solid green; }'],
   template: `
-    <div class="card">
+    <article>
       <ng-content select="[header]"></ng-content>
       <ng-content select="[body]"></ng-content>
-    </div>
+    </article>
   `
 })
 export class GreenWrapperComponent {}

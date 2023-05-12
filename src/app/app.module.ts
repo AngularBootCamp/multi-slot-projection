@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import {
   BlueWrapperComponent,
-  BlueWrapperDirective
+  BlueWrapperChildrenComponent
 } from './blue-wrapper.component';
 import { GreenWrapperComponent } from './green-wrapper.component';
 
@@ -12,7 +12,7 @@ import { GreenWrapperComponent } from './green-wrapper.component';
   declarations: [
     AppComponent,
     BlueWrapperComponent,
-    BlueWrapperDirective,
+    BlueWrapperChildrenComponent,
     GreenWrapperComponent
   ],
   imports: [BrowserModule],
