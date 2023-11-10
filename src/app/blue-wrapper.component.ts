@@ -15,7 +15,8 @@ import { Component } from '@angular/core';
         <ng-content select="app-blue-wrapper-content"></ng-content>
       </article>
     </article>
-  `
+  `,
+  standalone: true
 })
 export class BlueWrapperComponent {}
 
@@ -23,6 +24,7 @@ export class BlueWrapperComponent {}
   selector: 'app-blue-wrapper-heading, app-blue-wrapper-content',
   template: `
     <ng-content></ng-content>
-  `
+  `,
+  standalone: true
 })
 export class BlueWrapperChildrenComponent {}
